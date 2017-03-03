@@ -8,7 +8,7 @@ This is definitely the most difficult project I have encountered in a Sprint typ
 
 ### Wireframe
 
-http://imgur.com/a/MBuBG
+![](http://imgur.com/a/MBuBG)
 ---
 
 ### User Story
@@ -18,7 +18,7 @@ user-stories.md
 
 ### Github
 
-![](https://baokhoavu.github.io/project_04)
+https://baokhoavu.github.io/project_04
 ---
 
 ### Heroku
