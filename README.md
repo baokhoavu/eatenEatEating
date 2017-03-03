@@ -7,11 +7,11 @@ This is definitely the most difficult project I have encountered in a Sprint typ
 ---
 
 ### App
-![image](http://imgur.com/a/QwjY5)
+![image](http://i.imgur.com/bnNPyjU.png)
 
 ### Wireframe
 
-![image](http://imgur.com/a/MBuBG)
+![image](http://i.imgur.com/GQDTYOG.png)
 ---
 
 ### User Story
