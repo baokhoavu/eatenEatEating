@@ -11,11 +11,9 @@
     var vm = this
     vm.title = 'This Is You. For Now. Unless. You Know.'
 
-    vm.bookmark = [];
+    vm.delete = deleteRecipe;
 
-    vm.delete = deleteRecipe
-
-    getRecipes()
+    getRecipes();
 
     function getRecipes() {
       console.log('step 2 dawg')
@@ -37,9 +35,8 @@
           $route.reload()
         }, function(err) {
           console.log(err)
-        })
+      })
     }
   }
-
 })();
 

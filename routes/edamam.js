@@ -1,12 +1,6 @@
 var express = require('express');
 var router = express.Router();
 var request = require('request');
-/* GET users listing. */
-// router.get('/', function(req, res, next){
-//   const user = req.session.user
-//   if (!user) return res.redirect('/');
-//   res.render
-// })
 
 router.post('/cut', function(req, res, next) {
   var query = req.body.searchDataOne

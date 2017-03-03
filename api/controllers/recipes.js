@@ -3,9 +3,7 @@ var Recipe = require('../models/recipe')
 function getRecipe(req, res) {
   Recipe.find(function(err, recipes) {
     if (err) console.log(err);
-
     res.json({recipes: recipes})
-    console.log('Here ya go!')
   })
 }
 
