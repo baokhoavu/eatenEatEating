@@ -18,7 +18,7 @@ user-stories.md
 
 ### Github
 
-https://baokhoavu.github.io/project_04
+![](https://baokhoavu.github.io/project_04)
 ---
 
 ### Heroku
