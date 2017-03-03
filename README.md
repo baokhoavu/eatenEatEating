@@ -8,7 +8,7 @@ This is definitely the most difficult project I have encountered in a Sprint typ
 
 ### Wireframe
 
-![alt tag](http://imgur.com/a/MBuBG)
+![Screenshot](http://imgur.com/a/MBuBG)
 ---
 
 ### User Story
