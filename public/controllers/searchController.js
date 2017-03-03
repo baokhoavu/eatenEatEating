@@ -1,3 +1,5 @@
+
+
 (function() {
   "use strict";
 
@@ -21,7 +23,7 @@
 
     // low fat and less calories
     function cutRecipe() {
-      var url = process.env.REDIRECT_URL + '/cut'
+      var url = 'http://localhost:3000/edamam/cut' || process.env.REDIRECT_URL + '/cut'
       var searchDataOne = $('#searchOne').val()
       var inputDataOne = { searchDataOne: searchDataOne }
       $http
@@ -38,7 +40,7 @@
 
     // high protein more calories
     function BulkRecipe() {
-      var url = process.env.REDIRECT_URL + '/bulk'
+      var url = 'http://localhost:3000/edamam/bulk' || process.env.REDIRECT_URL + '/bulk'
       var searchDataTwo = $('#searchTwo').val()
       var inputDataTwo = { searchDataTwo: searchDataTwo }
       console.log(inputDataTwo)

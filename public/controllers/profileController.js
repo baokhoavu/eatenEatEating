@@ -20,8 +20,9 @@
       $http
         .get('/api/recipes')
         .then(function(res) {
-          vm.allRecipes = res.data.recipes
-          console.log(vm.allRecipes)
+          vm.bookmark = res.data.recipes
+          console.log(vm.bookmark)
+          // console.log
         // console.log('1' res.data)
         // console.log('2' res.data.recipes)
         // console.log('3' res.data.Recipes)
