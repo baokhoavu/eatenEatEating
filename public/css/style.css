@@ -1,7 +1,21 @@
+h1 {
+  font-family: Arial;
+  text-shadow: 1px 1px white;
+  text-align: center;
+}
+
+nav {
+  text-align: center;
+}
+.homes, .homez, .surgeOne, .surgeTwo, .titeOne, .titeTwo, .titeThree {
+  text-align: center;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   font-weight: 100;
   background-color: #e3e3e4;
-  max-width: 960px;
+  /*max-width: 160px;*/
   margin: 0 auto;
+
 }

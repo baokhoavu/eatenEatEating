@@ -9,7 +9,7 @@
 
   function mainController($http) {
     var vm = this
-    vm.title = 'Eaten Eat Eating'
+    vm.title = '[ Eaten Eat Eating ]'
   }
 
 })();
