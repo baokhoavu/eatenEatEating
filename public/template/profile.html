@@ -6,12 +6,12 @@
   <ul>
     <li ng-repeat="bk in pr.bookmark">
       <div><b>Name: {{bk.name}}</b></div>
-      <div><img ng-src='{{bk.recipe.image}}'></div>
-      <div>Calories: {{bk.calories}}</div>
-      <div>Fat: {{bk.fat}}g</div>
-      <div>Carbs: {{bk.carbs}}g</div>
-      <div>Protein: {{bk.protein}}g</div>
-      <div>Url: <a href='{{bk.url}}'</a></div>
+      <div><img ng-src='{{bk.img}}'></div>
+      <div>Calories: {{bk.calories | number:0}}</div>
+      <div>Fat: {{bk.fat | number:0}}g</div>
+      <div>Carbs: {{bk.carbs | number:0}}g</div>
+      <div>Protein: {{bk.protein | number:0}}g</div>
+      <div>Url: <a href='{{bk.url}}'>{{bk.url}}</a></div>
     </li>
   </ul>
 </div>
