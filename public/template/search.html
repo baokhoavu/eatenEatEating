@@ -1,0 +1,24 @@
+<h3>{{sr.titleOne}}</h3>
+<form method='POST' ng-model='sr.searchInput' ng-submit='sr.cut()'>
+  <input type='text' id='searchOne' placeholder='Bare Minimum?'>
+  <button>Search</button>
+</form>
+<h3>{{sr.titleTwo}}</h3>
+<form method='POST' ng-model='sr.searchInput' ng-submit='sr.bulk()'>
+  <input type='text' id='searchTwo' placeholder='Never Enough?'>
+  <button>Search</button>
+</form>
+<div id='results'>
+  <ul>
+    <li ng-repeat="recipes in sr.recipes | orderBy:'recipe.calories'">
+      <div><b>{{recipes.recipe.label}}</b></div>
+      <button ng-click='sr.add(recipes)'>Bookmark</button>
+      <div><img ng-src='{{recipes.recipe.image}}'></div>
+      <div>Calories: {{recipes.recipe.calories | number:0}}</div>
+      <div>Fat: {{recipes.recipe.digest[0].daily | number:0}}g</div>
+      <div>Carbs: {{recipes.recipe.digest[1].daily | number:0}}g</div>
+      <div>Protein: {{recipes.recipe.digest[2].daily | number:0}}g</div>
+      <div>Url: <a href='{{recipes.recipe.url}}'>{{recipes.recipe.url}}</a></div>
+    </li>
+  </ul>
+</div>
