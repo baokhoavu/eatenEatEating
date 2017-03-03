@@ -1,5 +1,7 @@
 var mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost:27017/eat-eaten-eating');
+const url = process.env.MONGODB_URI || 'mongodb://localhost:27017/eat-eaten-eating'
+
+mongoose.connect(url);
 
 module.exports = mongoose;
