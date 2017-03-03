@@ -5,7 +5,7 @@
 <div id='bookmark'>
   <ul>
     <li ng-repeat="bk in pr.bookmark">
-      <div><b>Name: {{bk.name}}</b></div>
+      <div><button ng-click='pr.delete(bk)'>X</button><b>Name: {{bk.name}}</b></div>
       <div><img ng-src='{{bk.img}}'></div>
       <div>Calories: {{bk.calories | number:0}}</div>
       <div>Fat: {{bk.fat | number:0}}g</div>

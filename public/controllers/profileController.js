@@ -13,6 +13,8 @@
 
     vm.bookmark = [];
 
+    vm.delete = deleteRecipe
+
     getRecipes()
 
     function getRecipes() {
@@ -22,12 +24,20 @@
         .then(function(res) {
           vm.bookmark = res.data.recipes
           console.log(vm.bookmark)
-          // console.log
-        // console.log('1' res.data)
-        // console.log('2' res.data.recipes)
-        // console.log('3' res.data.Recipes)
-        // vm.allRecipes = res.data.recipes;
       })
+    }
+
+    function deleteRecipe(bk) {
+      let url = '/api/recipes/' + bk._id
+      $http
+        .delete(url)
+        .then(function(res ) {
+          console.log('deleted!')
+          getRecipes()
+          $route.reload()
+        }, function(err) {
+          console.log(err)
+        })
     }
   }
 
