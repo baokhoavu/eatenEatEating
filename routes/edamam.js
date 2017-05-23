@@ -2,6 +2,8 @@ var express = require('express');
 var router = express.Router();
 var request = require('request');
 
+
+// This is a post request using certain parameters to help with a calorie deficit and weight loss goal
 router.post('/cut', function(req, res, next) {
   var query = req.body.searchDataOne
   var app_id = process.env.EDAMAM_APP_ID;
@@ -19,6 +21,7 @@ router.post('/cut', function(req, res, next) {
   })
 });
 
+// This is a post request using certain parameters to help increase weight meant for bulking by increasing calorie intake as well as focusing on high protein content.
 router.post('/bulk', function(req, res, next) {
   var query = req.body.searchDataTwo
   var app_id = process.env.EDAMAM_APP_ID;

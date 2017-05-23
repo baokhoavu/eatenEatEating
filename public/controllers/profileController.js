@@ -15,6 +15,7 @@
 
     getRecipes();
 
+// displays all bookmarked recipes
     function getRecipes() {
       console.log('step 2 dawg')
       $http
@@ -25,6 +26,7 @@
       })
     }
 
+// removes recipes from the bookmarked page but needs to re-click/refresh page to show difference
     function deleteRecipe(bk) {
       let url = '/api/recipes/' + bk._id
       $http

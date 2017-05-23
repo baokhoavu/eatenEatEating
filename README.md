@@ -1,5 +1,7 @@
 ### Eaten Eat Eating
 ---
+This application allows the user to search up recipes. Two input fields are included with specific hidden parameters that fit to each goal. The input they choose as an ingredient or name will allow the search to filter and render a list for that item. They can bookmark any that they like to view later and if choosing so can also remove.
+
 
 ### Overview
 
