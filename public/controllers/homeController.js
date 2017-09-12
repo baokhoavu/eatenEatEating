@@ -9,7 +9,8 @@
 
   function homeController($http) {
     var vm = this
-    vm.title = 'Hey! Ready To Not Be You?!'
+    vm.title = 'These are your yummies that you saved for later'
+    vm.all = []
 
     vm.delete = deleteRecipe;
 
@@ -22,6 +23,7 @@
         .get('/api/recipes')
         .then(function(res) {
           vm.bookmark = res.data.recipes
+          vm.all = res.data.recipes
           console.log(vm.bookmark)
       })
     }
@@ -31,13 +33,15 @@
       let url = '/api/recipes/' + bk._id
       $http
         .delete(url)
-        .then(function(res ) {
-          console.log('deleted!')
-          getRecipes()
-          $route.reload()
+        .then(function(res) {
+        //   console.log('deleted!')
+          // getRecipes();
+        //   $route.reload()
+        //   getRecipes();
         }, function(err) {
           console.log(err)
       })
+        .then(getRecipes())
     }
   }
 })();

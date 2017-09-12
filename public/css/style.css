@@ -1,11 +1,15 @@
 h1 {
   font-family: Arial;
   text-shadow: 1px 1px white;
-  text-align: center;
+  /*text-align: center;*/
+  margin-left: 100px;
+  font-size: 65px;
 }
 
 nav {
   text-align: center;
+  background-color: #e8e9f8;
+  padding: 20px;
 }
 .homes, .homez, .surgeOne, .surgeTwo, .titeOne, .titeTwo, .titeThree {
   text-align: center;
@@ -14,8 +18,50 @@ nav {
 body {
   font-family: "Open Sans", sans-serif;
   font-weight: 100;
-  background-color: #e3e3e4;
+  background-color: #e0e2f5;
   /*max-width: 160px;*/
   margin: 0 auto;
+
+}
+
+.theList {
+  background-image: url('https://i.imgur.com/OkhLTSV.png');
+  background-size: 100%;
+  font-size: 25px;
+  text-shadow: 1px 1px grey;
+  background-attachment: fixed;
+}
+
+.searchList {
+ background-image: url('https://i.imgur.com/cYpxrrA.png');
+  background-size: 100%;
+  font-size: 25px;
+  text-shadow: 1px 1px grey;
+  background-attachment: fixed;
+}
+
+.eachList {
+  margin-top: 50px;
+
+}
+
+.savedName {
+  font-size: 25px
+}
+
+.titeOne {
+  font-size: 25px;
+}
+
+.titeTwo {
+  font-size: 25px;
+}
+
+.surgeOne {
+  /*width: 100px;*/
+  /*font-size: 100px;*/
+}
+
+.surgeTwo {
 
 }

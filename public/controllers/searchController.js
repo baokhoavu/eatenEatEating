@@ -18,11 +18,13 @@
     vm.cut = cutRecipe
     vm.bulk = BulkRecipe
 
+    vm.searched = []
+
     vm.add = addRecipe
 
     // low fat and less calories
     function cutRecipe() {
-      var url = 'http://localhost:8080/edamam/cut'
+      var url = 'http://localhost:3000/edamam/cut'
       // var url = 'http://blooming-citadel-82186.herokuapp.com/edamam/cut'
       // var url = 'http://localhost:3000/edamam/cut' || 'http://blooming-citadel-82186.herokuapp.com/edamam/cut'
       var searchDataOne = $('#searchOne').val()
@@ -32,7 +34,9 @@
         })
         .then(function(response){
           vm.recipes = response.data.hits
+          vm.searched = response.data.hits
           console.log(vm.recipes)
+          console.log(vm.searched)
           // vm.recipes.push(response)
         }, function(error) {
           console.log(error)
@@ -41,7 +45,7 @@
 
     // high protein more calories
     function BulkRecipe() {
-      var url = 'http://localhost:8080/edamam/bulk'
+      var url = 'http://localhost:3000/edamam/bulk'
       // var url = 'http://blooming-citadel-82186.herokuapp.com/edamam/bulk'
       // var url = 'http://localhost:3000/edamam/bulk' || 'http://blooming-citadel-82186.herokuapp.com/edamam/bulk'
       var searchDataTwo = $('#searchTwo').val()
@@ -51,6 +55,9 @@
         })
         .then(function(response){
           vm.recipes = response.data.hits
+          vm.searched = response.data.hits
+          console.log(vm.recipes)
+          console.log(vm.searched)
         }, function(error) {
           console.log(error)
         })

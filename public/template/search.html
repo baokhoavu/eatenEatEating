@@ -10,7 +10,7 @@
 </form>
 <div id='results'>
   <ul>
-    <li ng-repeat="recipes in sr.recipes | orderBy:'recipe.calories'">
+    <li class="searchList" ng-repeat="recipes in sr.recipes | orderBy:'recipe.calories'">
       <div><b>{{recipes.recipe.label}}</b></div>
       <button ng-click='sr.add(recipes)'>Bookmark</button>
       <div><img ng-src='{{recipes.recipe.image}}'></div>
