@@ -22,7 +22,7 @@
 
     // low fat and less calories
     function cutRecipe() {
-      var url = 'http://localhost:3000/edamam/cut'
+      var url = 'http://localhost:8080/edamam/cut'
       // var url = 'http://blooming-citadel-82186.herokuapp.com/edamam/cut'
       // var url = 'http://localhost:3000/edamam/cut' || 'http://blooming-citadel-82186.herokuapp.com/edamam/cut'
       var searchDataOne = $('#searchOne').val()
@@ -41,7 +41,7 @@
 
     // high protein more calories
     function BulkRecipe() {
-      var url = 'http://localhost:3000/edamam/bulk'
+      var url = 'http://localhost:8080/edamam/bulk'
       // var url = 'http://blooming-citadel-82186.herokuapp.com/edamam/bulk'
       // var url = 'http://localhost:3000/edamam/bulk' || 'http://blooming-citadel-82186.herokuapp.com/edamam/bulk'
       var searchDataTwo = $('#searchTwo').val()
