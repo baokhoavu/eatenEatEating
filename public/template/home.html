@@ -2,16 +2,22 @@
   {{hm.title}}
 </h3>
 
-<div id='bookmark'>
-  <ul class='theList'>
-    <li ng-repeat="bk in hm.bookmark">
-      <div><button ng-click='hm.delete(bk)'>X</button><b class='savedName'>{{bk.name}}</b></div>
-      <div><img ng-src='{{bk.img}}'></div>
-      <div>Calories: {{bk.calories | number:0}}</div>
-      <div>Fat: {{bk.fat | number:0}}g</div>
-      <div>Carbs: {{bk.carbs | number:0}}g</div>
-      <div>Protein: {{bk.protein | number:0}}g</div>
-      <div>Url: <a href='{{bk.url}}'>{{bk.url}}</a></div>
-    </li>
-  </ul>
+<!-- <div class="contain">
+  <div class="row">
+    <div class="col-md-12 text-center"> -->
+      <div id='bookmark'>
+        <ul class='theList' style='list-style: none;'>
+          <li ng-repeat="bk in hm.bookmark">
+            <div><button ng-click='hm.delete(bk)'>X</button><b class='savedName'>{{bk.name}}</b></div>
+            <div><img ng-src='{{bk.img}}'></div>
+            <div>Calories: {{bk.calories | number:0}}</div>
+            <div>Fat: {{bk.fat | number:0}}g</div>
+            <div>Carbs: {{bk.carbs | number:0}}g</div>
+            <div>Protein: {{bk.protein | number:0}}g</div>
+            <div>Url: <a href='{{bk.url}}'>{{bk.url}}</a></div>
+          </li>
+        </ul>
+      <!-- </div>
+    </div>
+  </div> -->
 </div>

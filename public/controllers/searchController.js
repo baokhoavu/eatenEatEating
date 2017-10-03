@@ -12,8 +12,8 @@
   function searchController($http) {
     var vm = this
 
-    vm.titleOne = "You Want Abs. These Will Help Ya"
-    vm.titleTwo = "Big Muscles? Stuff It Up With These"
+    // vm.titleOne = "You Want Abs. These Will Help Ya"
+    // vm.titleTwo = "Big Muscles? Stuff It Up With These"
 
     vm.cut = cutRecipe
     vm.bulk = BulkRecipe

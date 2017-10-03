@@ -7,11 +7,13 @@ h1 {
 }
 
 nav {
-  text-align: center;
+  /*text-align: center;*/
   background-color: grey;
   padding: 20px;
   text-align: right;
   opacity: 0.7;
+  top: 0;
+  /*position: fixed;*/
   /*color: black;*/
 }
 .homes, .homez, .surgeOne, .surgeTwo, .titeOne, .titeTwo, .titeThree {
@@ -26,23 +28,26 @@ body {
   margin: 0 auto;
   background-image: url('https://i.imgur.com/q9OqvqK.png');
   background-size: 100%;
+  background-attachment: fixed;
   /*opacity: 0.3;*/
 }
 
 .theList {
-  background-image: url('https://i.imgur.com/OkhLTSV.png');
+  /*background-image: url('https://i.imgur.com/OkhLTSV.png');*/
   background-size: 100%;
   font-size: 25px;
-  text-shadow: 1px 1px grey;
+  text-shadow: 2px 2px black;
   background-attachment: fixed;
+  color: white;
 }
 
 .searchList {
- background-image: url('http://i.imgur.com/ZbwcHyh.png');
+ /*background-image: url('http://i.imgur.com/ZbwcHyh.png');*/
   background-size: 100%;
   font-size: 25px;
-  text-shadow: 1px 1px grey;
+  text-shadow: 2px 2px black;
   background-attachment: fixed;
+  color: white;
 }
 
 .eachList {
