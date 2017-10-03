@@ -8,8 +8,11 @@ h1 {
 
 nav {
   text-align: center;
-  background-color: #e8e9f8;
+  background-color: grey;
   padding: 20px;
+  text-align: right;
+  opacity: 0.7;
+  /*color: black;*/
 }
 .homes, .homez, .surgeOne, .surgeTwo, .titeOne, .titeTwo, .titeThree {
   text-align: center;
@@ -21,7 +24,9 @@ body {
   background-color: #e0e2f5;
   /*max-width: 160px;*/
   margin: 0 auto;
-
+  background-image: url('https://i.imgur.com/q9OqvqK.png');
+  background-size: 100%;
+  /*opacity: 0.3;*/
 }
 
 .theList {
@@ -57,11 +62,17 @@ body {
   font-size: 25px;
 }
 
-.surgeOne {
-  /*width: 100px;*/
-  /*font-size: 100px;*/
+.mainHead {
+  color: #ffffff;
+  text-align: center;
+  font-size: 70px;
+  margin-top: 250px;
+  font-family: 'Roboto Slab';
+  font-weight: bolder;
+  text-shadow: 4px 4px black;
 }
 
-.surgeTwo {
-
+.homes {
+  color: #ffffff;
+  text-shadow: 4px 4px black;
 }

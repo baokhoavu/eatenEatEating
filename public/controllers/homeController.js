@@ -9,7 +9,7 @@
 
   function homeController($http) {
     var vm = this
-    vm.title = 'These are your yummies that you saved for later'
+    vm.title = "What we eat can define us!"
     vm.all = []
 
     vm.delete = deleteRecipe;
