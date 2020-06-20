@@ -54,5 +54,5 @@ https://www.edamam.com/
 
 ### Used Technologies
 
-- AngularJS, ES6, CSS5, HTML, Express, NodeJS, dotEnv
+- AngularJS, ES6, CSS5, HTML, Express, NodeJS, dotEnv, Mongodb, Heroku
 
